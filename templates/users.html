@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Users</title>
+</head>
+<body>
+    <h1>All Users</h1>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Created At</th>
+            <th>Actions</th>
+        </tr>
+        {% for x in session['users'] %}
+         <tr>
+            <td>{{x['id']}}</td>
+            <td>{{x['first_name']}} {{x['last_name']}} </td>
+            <td>{{x['email']}}</td>
+            <td>{{x['created_at']}}</td>
+         </tr>
+         {% endfor %}
+        </table>
+        <a href="/users/new">Add A New User</a>
+</body>
+</html>
