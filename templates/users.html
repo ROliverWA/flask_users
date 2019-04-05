@@ -24,9 +24,10 @@
             <td>{{x['first_name']}} {{x['last_name']}} </td>
             <td>{{x['email']}}</td>
             <td>{{x['created_at']}}</td>
+            <td class="user_links"><a href="/users/get_user/{{x['id']}}" class="poop">Show</a>|<a href="/edit/{{x['id']}}" class="poop">Edit</a>|<a href="remove/{{x['id']}}" class="poop">Delete</a></td>
          </tr>
          {% endfor %}
         </table>
-        <a href="/users/new">Add A New User</a>
+        <a href="/users/new" class="link_new">Add A New User</a>
 </body>
 </html>

@@ -5,7 +5,18 @@
 }
 
 table, tr, td {
-    border: 1px black;
+    border: 1px solid black;
+ }
+
+
+
+table {
+    width: 80%;
+}
+
+.link_new {
+    margin-left: 0px;
+    margin-top: 10px;
 }
 
 .new_wrapper {
@@ -21,7 +32,7 @@ table, tr, td {
     
 }
 
-a {
+.head_home {
     display: inline-block;
     vertical-align: top;
     margin-left: 300px;
@@ -58,4 +69,68 @@ a {
 .create_me {
     margin-top: 35px;
     box-shadow: 0px 3px 3px 0px black;
+}
+
+.detail_wrapper {
+    display: inline-block;
+    width: 750px;
+    height: 750px;
+    background-color: tomato;
+    padding: 10px;
+    
+}
+
+.detail_header {
+    width: 750px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.detail_home {
+    display: inline-block;
+    text-align: right;
+    margin-left: 600px;
+
+}
+
+.detail_info{
+    display: inline-block;
+    
+}
+
+.detail_body {
+    width: 100%;
+    height: 560px;
+}
+
+.detail_p {
+    margin-top:15px
+}
+
+.edit_wrapper {
+    text-align: center;
+   
+}
+
+.edit_button {
+    margin-bottom: 20px;
+}
+
+
+.edit_home {
+    margin-left: 400px;
+}
+
+.edit_header {
+    margin-left: 458px;
+    display: inline-block;
+}
+
+.editz {
+    margin-top: 10px;
+}
+
+.edit_show {
+    margin-top: 20px;
 }

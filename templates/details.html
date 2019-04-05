@@ -9,9 +9,43 @@
 </head>
 <body>
     <div id="detail_wrapper" class="detail_wrapper">
-    <h1 class="detail_header">User {{users}}</h1>        
+        <div id="detail_header" class="detail_header">
+            <h1 class="detail_info">User {{users}} </h1><a href='/' class="detail_home">Home</a>
+        </div>
+        <div id="detail_body" class="detail_body">
+            {% for x in session['secret_info'] %}
+            <p class="detail_p">Full Name: {{x['first_name']}} {{x['last_name']}}</p>
+            <p class="detail_p">Email: {{x['email']}}</p>
+            <p class="detail_p">Created On: {{x['created_at']}}</p>
+            <p class="detail_p">Last Updated On: {{x['updated_at']}}</p>     
+            {% endfor %}       
+        </div>
+        <div id="detail_footer" class="detail_footer">
+                <a href="/edit/{{users}}" class="poop">Edit</a>|<a href="remove/{{users}}" class="poop">Delete</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>
-    
+
+
+
+
+
+    </div>
 </body>
 </html>
